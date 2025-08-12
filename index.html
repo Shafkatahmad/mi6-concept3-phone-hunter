@@ -197,7 +197,17 @@
         type="text"
         placeholder="Search..."
       />
-      <button class="btn bg-blue-400 text-white">search</button>
+      <button onclick="handleSearch()" class="btn bg-blue-400 text-white">
+        search
+      </button>
     </div>
+    <div class="flex justify-center">
+      <span
+        id="loading-spinner"
+        class="loading loading-spinner loading-xl hidden"
+      ></span>
+    </div>
+
+    <script src="./index.js"></script>
   </body>
 </html>
