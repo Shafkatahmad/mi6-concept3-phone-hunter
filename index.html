@@ -193,6 +193,7 @@
     </nav>
     <div class="flex justify-center m-5">
       <input
+        id="search-box"
         class="p-1 border border-gray-300 min-w-1/4"
         type="text"
         placeholder="Search..."
@@ -205,11 +206,18 @@
         search
       </button>
     </div>
-    <div class="flex justify-center">
+    <!-- loading spinner -->
+    <div class="flex flex-col justify-center items-center">
       <span
         id="loading-spinner"
         class="loading loading-spinner loading-xl hidden"
       ></span>
+      <button
+        onclick="handleShowAll()"
+        class="flex justify-center bg-red-500 text-white btn"
+      >
+        Show All
+      </button>
     </div>
 
     <script src="./index.js"></script>
